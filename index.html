@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="lang" key="title">Нурлыбек Нуржан</title>
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/fonts.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="src/css/index.css">
+
+  <script defer src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="src/js/languages.js"></script>
+  <script defer src="src/js/index.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav-bar">
+      <h1>Nurzhan</h1>
+      <div class="nav-items-container">
+        <ul class="nav-items">
+          <div class="nav-close-btn"><i class='bx bx-x'></i></div>
+          <li><a class="lang" key="home" href="#home" onclick="lenis.scrollTo('#home')">Главная</a></li>
+          <li><a class="lang" key="skills" href="#skills" onclick="lenis.scrollTo('#skills')">Навыки</a></li>
+          <li><a class="lang" key="works" href="#works" onclick="lenis.scrollTo('#works')">Работы</a></li>
+          <li><a class="lang" key="about" href="#about" onclick="lenis.scrollTo('#about')">Обо мне</a></li>
+          <li><a class="lang" key="contact" href="#contact" onclick="lenis.scrollTo('#contact')">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="nav-menu-btn"><i class='bx bx-menu-alt-right'></i></div>
+    </nav>
+    <ul class="functions-container">
+      <li><i class="bx bx-moon theme"></i></li>
+      <li><i class='bx bx-world language-container'></i></li>
+      <li><button value="ru" class="language">Русский</button></li>
+      <li><button value="en" class="language">English</button></li>
+      <li><button value="es" class="language">Español</button></li>
+      <li><button value="ger" class="language">Deutsch</button></li>
+      <li><button value="fr" class="language">Française</button></li>
+      <li><i class="bx bxs-color color-container"></i></li>
+      <li><i class="bx bxs-color color" style="color: #ff0000"></i></li>
+      <li><i class="bx bxs-color color" style="color: #ffff00"></i></li>
+      <li><i class="bx bxs-color color" style="color: #00ff00"></i></li>
+      <li><i class="bx bxs-color color" style="color: #00ffff"></i></li>
+      <li><i class="bx bxs-color color" style="color: #0000ff"></i></li>
+      <li><i class="bx bxs-color color" style="color: #9a00fb"></i></li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <section class="home" id="home">
+      <div class="container">
+        <div class="home-info">
+          <h3 class="lang" key="hi"></h3>
+          <h1 class="lang" key="myName"></h1>
+          <h2><span class="lang" key="me">Я -</span> <span class="typing lang"></span></h2>
+          <div class="home-buttons">
+            <a href="#" class="btn" id="cv">
+              <span class="lang" key="cvOpen">Открыть резюме</span>
+              <i class="bx bx-sm bx-download"></i>
+            </a>
+            <a href="#contact" class="btn" onclick="lenis.scrollTo('#contact')">
+              <span class="lang" key="contactMe">Связаться со мной</span>
+              <i class="bx bx-sm bxs-chevrons-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="img home-img">
+          <img id="avatar" class="change-color" src="./utils/images/avatar.png" alt="avatar">
+        </div>
+      </div>
+      <a href="#skills" onclick="lenis.scrollTo('#skills')">
+        <i class="bx bx-md bxs-chevrons-down bx-fade-down" style="color: var(--normal-color)"></i>
+      </a>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h1 class="section-title-01 lang" key="skills">Навыки</h1>
+        <h1 class="section-title-02 lang" key="skills">Навыки</h1>
+        <div class="skills-content">
+          <div class="skills-box">
+            <div class="skill-main">
+              <div class="skill-bar">
+                <div class="skill">
+                  <img src="./utils/logos/html.svg" alt="html">
+                  <span>HTML</span>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill">
+                  <img src="./utils/logos/css.svg" alt="css">
+                  <span>CSS</span>
+                </div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill">
+                  <img src="./utils/logos/javascript.svg" alt="javascript">
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/sass.svg" alt="sass">
+                      <span>SASS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/less.svg" alt="less">
+                      <span>LESS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/postcss.svg" alt="postcss">
+                      <span>PostCSS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/bootstrap.svg" alt="bootstrap">
+                      <span>Bootstrap</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/tailwind.svg" alt="tailwind">
+                      <span>Tailwind</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/typescript.svg" alt="typescript">
+                      <span>TypeScript</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/react.svg" alt="react">
+                      <span>React</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/vue.svg" alt="vue">
+                      <span>Vue</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/vite.svg" alt="vite">
+                      <span>Vite</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/webpack.svg" alt="webpack">
+                      <span>Webpack</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/gulp.svg" alt="gulp">
+                      <span>Gulp</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/rollup.svg" alt="rollup">
+                      <span>Rollup</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/npm.svg" alt="npm">
+                      <span>NPM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/git.svg" alt="git">
+                      <span>Git</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/github.svg" alt="github">
+                      <span>GitHub</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/figma.svg" alt="figma">
+                      <span>Figma</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/photoshop.svg" alt="photoshop">
+                      <span>Photoshop</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="skill-bar">
+                    <div class="skill">
+                      <img src="./utils/logos/illustrator.svg" alt="illustrator">
+                      <span>Illustrator</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <img id="first" class="change-color" src="./utils/images/boy.png" alt="decor">
+        <div class="works-content">
+          <h1 class="section-title-01 lang" key="works">Работы</h1>
+          <h1 class="section-title-02 lang" key="works">Работы</h1>
+          <div class="works-buttons">
+            <button class="lang" key="siteBtn" id="sites-button">Web-Сайты</button>
+            <button class="lang" key="interBtn" id="inter-button">Интерактивы</button>
+          </div>
+          <div class="sites">
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-1.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>CreateX</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-1-for-deployment" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-1.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-9.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>EduWeb</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-9" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-9.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-4.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>Coffee</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-4" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-4.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-7.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>PetStore</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-7" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-7.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-5.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>GoTrip</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-5" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-5.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-6.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>2rism</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-6" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-6.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-12.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>FoodMan</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-12" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-12.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-11.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>HealthCare</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-11" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-11.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-2.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>Kropp</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-2-for-Deploying" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-2.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-10.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>FitClub</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-10" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-10.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-3.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>HomeFood</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-3" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-3.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-project-8.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Website</h3>
+                <h2>Panto</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Project-8" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-project-8.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inter">
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini1.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Creative Scroll</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-1" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini1.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini5.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Amazing Inner Scroll</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-5" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini5.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini3.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Parallax Effect Scroll</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-3" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini3.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini4.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>3D Scene</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-4" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini4.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini8.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Horizontal Parallax Scroll</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-8" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini8.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini2.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>3D Parallax Effect</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-2" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini2.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini7.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Cool Card Scrolling</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-7" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini7.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini6.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Motion Effect</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-6" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini6.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="work">
+              <div class="work-img">
+                <img src="./utils/images/works/nurzhan-mini9.netlify.app.png" alt="work">
+              </div>
+              <div class="work-info">
+                <h3>Interaction</h3>
+                <h2>Innovative Slider</h2>
+                <div class="work-buttons">
+                  <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-9" target="_blank"><i
+                      class="bx bx-xs bxl-github"></i><span class="lang" key="workCode">Код</span></a>
+                  <a href="https://nurzhan-mini9.netlify.app/" target="_blank"><i
+                      class="bx bx-xs bx-window-open"></i><span class="lang" key="workSite">Сайт</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img id="second" class="change-color" src="./utils/images/boy-2.png" alt="decor">
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h1 class="section-title-01 lang" key="about">Обо мне</h1>
+        <h1 class="section-title-02 lang" key="about">Обо мне</h1>
+        <div class="about-content">
+          <div class="about-img">
+            <img id="man" src="./utils/images/about.png" alt="avatar">
+          </div>
+          <div class="about-info">
+            <div class="about-text">
+              <h3 class="lang" key="aboutMe">Я Нуржан</h3>
+              <h4>
+                <span class="lang" key="aboutDesc1">Готов помочь вашему бизнесу</span>
+                <span class="glow lang" key="aboutDesc2">качественными услугами</span>
+                <span class="lang" key="aboutDesc3">Frontend Разработчика в</span>
+                <span class="glow lang" key="aboutDesc4">кратчайшие сроки</span>
+              </h4>
+              <h5>
+                <span class="lang" key="aboutText">
+                  Я создаю современные сайты различного формата и несу
+                  ответственность за адаптивную, кроссбраузерную верстку и
+                  разработку сайтов, комфортную как визуально так и на практике
+                  с помощью качественно подобранных решений адаптива и
+                  инетрактивов. Подробнее обо мне в моём
+                </span>
+                <button class="glow lang" id="cv" key="aboutCv">
+                  резюме
+                </button>
+              </h5>
+            </div>
+            <ul class="professional-list">
+              <li class="list-item">
+                <h3>1+</h3>
+                <p class="lang" key="profFirst">Года опыта в Frontend Разработке</p>
+              </li>
+              <li class="list-item">
+                <h3>2</h3>
+                <p class="lang" key="profSecond">Senior Frontend Разработчика были моими менторами</p>
+              </li>
+              <li class="list-item">
+                <h3>3</h3>
+                <p class="lang" key="profThird">Командных проектов было реализовано</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h1 class="section-title-01 lang" key="contact">Контакты</h1>
+        <h1 class="section-title-02 lang" key="contact">Контакты</h1>
+        <div class="contact-content">
+          <div class="contact-links">
+            <h2 class="lang" key="callMe">Связаться со мной</h2>
+            <ul class="contact-icons">
+              <li><i class='bx bx-md bx-envelope'></i><span>nurlybeknurzhan@gmail.com</span></li>
+              <li><i class='bx bx-md bx-phone'></i><span>+7 778 961 2553</span></li>
+              <li><i class='bx bx-md bxl-whatsapp'></i><span>+7 776 529 9555</span></li>
+              <li><i class='bx bx-md bxl-github'></i><span>Nurlybek-Nurzhan</span></li>
+              <li>
+                <i class='bx bx-md bxl-telegram'></i>
+                <i class='bx bx-md bxl-vk'></i>
+                <i class='bx bx-md bxl-discord-alt'></i>
+                <i class='bx bx-md bxl-twitter'></i>
+                <i class='bx bx-md bxl-instagram-alt'></i>
+                <span>nurzhan_develop</span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-box">
+            <form class="contact-form" id="contact-form" action="#">
+              <div class="head-form">
+                <div class="input-container">
+                  <input type="text" name="user_name" id="name" class="input" autocomplete="on">
+                  <label class="lang" key="name" for="name">Имя</label>
+                  <span class="lang" key="name">Имя</span>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="user_email" id="email" class="input" autocomplete="on">
+                  <label class="lang" key="email" for="email">Email</label>
+                  <span class="lang" key="email">Email</span>
+                </div>
+              </div>
+              <div class="input-container">
+                <input type="text" name="user_subject" id="subject" class="input">
+                <label class="lang" key="subject" for="subject">Тема обращения</label>
+                <span class="lang" key="subject">Тема обращения</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="user_message" id="message" class="textarea-input input"></textarea>
+                <label class="lang" key="message" for="message">Сообщение</label>
+                <span class="lang" key="message">Сообщение</span>
+              </div>
+              <div class="send-btn">
+                <button type="submit" class="btn">
+                  <span class="lang" key="send">Отправить</span>
+                  <i class='bx bx-sm bx-send bx-fade-right'></i>
+                </button>
+                <span class="contact-message" id="contact-message"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="social">
+      <li>
+        <a href="https://github.com/Nurlybek-Nurzhan" target="_blank">
+          <i class='bx bxl-github'></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/nurzhan_develop" target="_blank">
+          <i class='bx bxl-instagram-alt'></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://api.whatsapp.com/send?phone=77765299555" target="_blank">
+          <i class='bx bxl-whatsapp'></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://t.me/nurzhan_develop" target="_blank">
+          <i class='bx bxl-telegram'></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://vk.com/nurzhan_develop" target="_blank">
+          <i class='bx bxl-vk'></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://discord.com/users/1121057165461958727" target="_blank">
+          <i class='bx bxl-discord-alt'></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/nurzhan_develop" target="_blank">
+          <i class='bx bxl-twitter'></i>
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">Nurlybek Nurzhan</p>
+  </footer>
+
+</body>
+
+</html>

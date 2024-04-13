@@ -304,7 +304,7 @@ languages.forEach((element) => {
     document.body.querySelectorAll(".lang").forEach((item) => {
       item.textContent =
         arrayOfLanguages[event.target.getAttribute("value")][
-          item.getAttribute("key")
+          item.getAttribute("data-key")
         ];
     });
 

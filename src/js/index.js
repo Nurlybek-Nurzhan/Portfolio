@@ -4,9 +4,10 @@ const navMenuBtn = document.body.querySelector(".nav-menu-btn");
 const navCloseBtn = document.body.querySelector(".nav-close-btn");
 const navigation = document.body.querySelector(".nav-items-container");
 const navItems = document.body.querySelectorAll(".nav-items li a");
-const changeTheme = document.body.querySelector(".bx-moon");
+const changeTheme = document.body.querySelector(".theme");
 const changeLanguage = document.body.querySelector(".language-container");
 const changeColor = document.body.querySelector(".color-container");
+const moon = document.body.querySelector(".bx-moon");
 const languages = document.body.querySelectorAll(".language");
 const colors = document.body.querySelectorAll(".color");
 const changeColorElements = document.body.querySelectorAll(".change-color");
@@ -25,11 +26,9 @@ const cvBtn = document.body.querySelectorAll("#cv");
 let skills = gsap.utils.toArray(".skills-content, .skills-box");
 let worksLeft = gsap.utils.toArray(["#first, #sites-button"]);
 let worksRight = gsap.utils.toArray(["#second, #inter-button"]);
-let contactForms = gsap.utils.toArray([".input-container, .send-btn"]);
+let contactForms = gsap.utils.toArray([".input-container"]);
 let contactTexts = gsap.utils.toArray([".contact-links h2, .contact-icons li"]);
-let aboutTexts = gsap.utils.toArray([
-  ".about-text h3, .about-text h4, .about-text h5",
-]);
+let aboutTexts = gsap.utils.toArray([".about-text h3, .about-text h4, .about-text h5",]);
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,7 +42,8 @@ const reveal = (
   afterOpacity,
   start,
   end,
-  duration
+  duration,
+  markersVisible = false
 ) => {
   gsap.fromTo(
     element,
@@ -58,6 +58,7 @@ const reveal = (
         end: end,
         duration: duration,
         scrub: true,
+        markers: markersVisible
       },
     }
   );
@@ -65,17 +66,12 @@ const reveal = (
 
 reveal(".home-img", 0, 0, 1, 50, -200, 0, "0", "1000", { min: 0.2, max: 3 });
 reveal(".home-info h3", 0, 0, 1, 0, -300, 0, "0", "1000", { min: 0.2, max: 3 });
-reveal(".home-info h1", 0, 0, 1, 200, -200, 0, "0", "1000", {
-  min: 0.2,
-  max: 3,
-});
-reveal(".home-info h2", 0, 0, 1, -200, -200, 0, "0", "1000", {
-  min: 0.2,
-  max: 3,
-});
-reveal(".home-buttons", 0, 0, 1, 0, 30, 0, "0", "1000", { min: 0.2, max: 3 });
+reveal(".home-info h1", 0, 0, 1, 200, -200, 0, "0", "1000", {min: 0.2,max: 3,});
+reveal(".home-info h2", 0, 0, 1, -200, -200, 0, "0", "1000", {min: 0.2, max: 3,});
+reveal(".home-links", 0, 0, 1, 0, 30, 0, "0", "1000", { min: 0.2, max: 3 });
 reveal(".about-img", 0, 100, 0, 0, 0, 1, "top bottom", "bottom 90%", 5);
 reveal(".professional-list", 0, 50, 0, 0, 0, 1, "top bottom", "bottom 75%", 5);
+reveal(".send-btn", 500, 100, 0, 0, 0, 1, "-100% bottom", "top bottom", 5);
 
 skills.forEach((skill) => {
   reveal(skill, 0, 200, 0, 0, 0, 1, "0", "800", { min: 0.2, max: 3 });
@@ -90,10 +86,10 @@ aboutTexts.forEach((aboutText) => {
   reveal(aboutText, 500, 100, 0, 0, 0, 1, "top bottom", "bottom 90%", 5);
 });
 contactTexts.forEach((contactText) => {
-  reveal(contactText, -500, 100, 0, 0, 0, 1, "top bottom", "bottom 90%", 5);
+  reveal(contactText, -500, 100, 0, 0, 0, 1, "-100% bottom", "top bottom", 5);
 });
 contactForms.forEach((contactForm) => {
-  reveal(contactForm, 500, 100, 0, 0, 0, 1, "top bottom", "bottom 90%", 5);
+  reveal(contactForm, 500, 100, 0, 0, 0, 1, "top bottom", "90% bottom", 5);
 });
 
 const lenis = new Lenis();
@@ -271,8 +267,8 @@ contactForm.addEventListener("submit", sendEmail);
 
 /* ================================================================= THEME CHANGING ================================================================= */
 changeTheme.addEventListener("click", () => {
-  changeTheme.classList.toggle("bx-moon");
-  changeTheme.classList.toggle("bx-sun");
+  moon.classList.toggle("bx-moon");
+  moon.classList.toggle("bx-sun");
   document.body.classList.toggle("dark");
 });
 /* ================================================================= THEME CHANGING ================================================================= */
@@ -288,7 +284,8 @@ changeLanguage.addEventListener("click", () => {
 document.body.addEventListener("click", (event) => {
   if (
     event.target.classList.contains("language-container") ||
-    event.target.classList.contains("language")
+    event.target.classList.contains("language") ||
+    event.target.classList.contains("bx-world")
   ) {
     return;
   }
@@ -369,7 +366,8 @@ changeColorFunc(5, "purple");
 document.body.addEventListener("click", (event) => {
   if (
     event.target.classList.contains("color-container") ||
-    event.target.classList.contains("color")
+    event.target.classList.contains("color") ||
+    event.target.classList.contains("colors")
   ) {
     return;
   }

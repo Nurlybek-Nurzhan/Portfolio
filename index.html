@@ -28,31 +28,31 @@
       <h1>Nurzhan</h1>
       <div class="nav-items-container">
         <ul class="nav-items">
-          <li class="nav-close-btn"><i class='bx bx-x'></i></li>
-          <li><a class="lang" data-key="home" href="#home" onclick="lenis.scrollTo('#home')">Главная</a></li>
-          <li><a class="lang" data-key="skills" href="#skills" onclick="lenis.scrollTo('#skills')">Навыки</a></li>
-          <li><a class="lang" data-key="works" href="#works" onclick="lenis.scrollTo('#works')">Работы</a></li>
-          <li><a class="lang" data-key="about" href="#about" onclick="lenis.scrollTo('#about')">Обо мне</a></li>
-          <li><a class="lang" data-key="contact" href="#contact" onclick="lenis.scrollTo('#contact')">Контакты</a></li>
+          <li><button class="nav-close-btn"><i class='bx bx-x'></i></button></li>
+          <li><a href="#home" class="lang" data-key="home" onclick="lenis.scrollTo('#home')">Главная</a></li>
+          <li><a href="#skills" class="lang" data-key="skills" onclick="lenis.scrollTo('#skills')">Навыки</a></li>
+          <li><a href="#works" class="lang" data-key="works" onclick="lenis.scrollTo('#works')">Работы</a></li>
+          <li><a href="#about" class="lang" data-key="about" onclick="lenis.scrollTo('#about')">Обо мне</a></li>
+          <li><a href="#contact" class="lang" data-key="contact" onclick="lenis.scrollTo('#contact')">Контакты</a></li>
         </ul>
       </div>
-      <div class="nav-menu-btn"><i class='bx bx-menu-alt-right'></i></div>
+      <button class="nav-menu-btn"><i class='bx bx-menu-alt-right'></i></button>
     </nav>
     <ul class="functions-container">
-      <li><i class="bx bx-moon theme"></i></li>
-      <li><i class='bx bx-world language-container'></i></li>
+      <li><button class="theme"><i class="bx bx-moon"></i></button></li>
+      <li><button class="language-container"><i class='bx bx-world'></i></button></li>
       <li><button value="ru" class="language">Русский</button></li>
       <li><button value="en" class="language">English</button></li>
       <li><button value="es" class="language">Español</button></li>
       <li><button value="ger" class="language">Deutsch</button></li>
       <li><button value="fr" class="language">Française</button></li>
-      <li><i class="bx bxs-color color-container"></i></li>
-      <li><i class="bx bxs-color color" style="color: #ff0000"></i></li>
-      <li><i class="bx bxs-color color" style="color: #ffff00"></i></li>
-      <li><i class="bx bxs-color color" style="color: #00ff00"></i></li>
-      <li><i class="bx bxs-color color" style="color: #00ffff"></i></li>
-      <li><i class="bx bxs-color color" style="color: #0000ff"></i></li>
-      <li><i class="bx bxs-color color" style="color: #9a00fb"></i></li>
+      <li><button class="color-container"><i class="bx bxs-color colors"></i></button></li>
+      <li><button class="color"><i class="bx bxs-color colors" style="color: #ff0000"></i></button></li>
+      <li><button class="color"><i class="bx bxs-color colors" style="color: #ffff00"></i></button></li>
+      <li><button class="color"><i class="bx bxs-color colors" style="color: #00ff00"></i></button></li>
+      <li><button class="color"><i class="bx bxs-color colors" style="color: #00ffff"></i></button></li>
+      <li><button class="color"><i class="bx bxs-color colors" style="color: #0000ff"></i></button></li>
+      <li><button class="color"><i class="bx bxs-color colors" style="color: #9a00fb"></i></button></li>
     </ul>
   </header>
 
@@ -63,7 +63,7 @@
           <h3 class="lang" data-key="hi"></h3>
           <h1 class="lang" data-key="myName"></h1>
           <h2><span class="lang" data-key="me">Я -</span> <span class="typing lang"></span></h2>
-          <div class="home-buttons">
+          <div class="home-links">
             <a href="#" class="btn" id="cv">
               <span class="lang" data-key="cvOpen">Открыть резюме</span>
               <i class="bx bx-sm bx-download"></i>
@@ -282,7 +282,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>HooBank</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Big-Project" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-13.netlify.app/" target="_blank"><i
@@ -297,7 +297,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>2rism</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-6" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-6.netlify.app/" target="_blank"><i
@@ -312,7 +312,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>FoodMan</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-12" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-12.netlify.app/" target="_blank"><i
@@ -327,7 +327,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>FitClub</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-10" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-10.netlify.app/" target="_blank"><i
@@ -342,7 +342,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>PetStore</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-7" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-7.netlify.app/" target="_blank"><i
@@ -357,7 +357,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>GoTrip</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-5" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-5.netlify.app/" target="_blank"><i
@@ -372,7 +372,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>Coffee</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-4" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-4.netlify.app/" target="_blank"><i
@@ -387,7 +387,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>Kropp</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-2" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-2.netlify.app/" target="_blank"><i
@@ -402,7 +402,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>CreateX</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-1" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-1.netlify.app/" target="_blank"><i
@@ -417,7 +417,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>EduWeb</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-9" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-9.netlify.app/" target="_blank"><i
@@ -432,7 +432,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>HealthCare</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-11" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-11.netlify.app/" target="_blank"><i
@@ -447,7 +447,7 @@
               <div class="work-info">
                 <h3>Website</h3>
                 <h2>Panto</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Project-8" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-project-8.netlify.app/" target="_blank"><i
@@ -464,7 +464,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Creative Scroll</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-1" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini1.netlify.app/" target="_blank"><i
@@ -479,7 +479,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Amazing Inner Scroll</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-5" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini5.netlify.app/" target="_blank"><i
@@ -494,7 +494,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Parallax Effect Scroll</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-3" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini3.netlify.app/" target="_blank"><i
@@ -509,7 +509,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>3D Scene</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-4" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini4.netlify.app/" target="_blank"><i
@@ -524,7 +524,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Horizontal Parallax Scroll</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-8" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini8.netlify.app/" target="_blank"><i
@@ -539,7 +539,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>3D Parallax Effect</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-2" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini2.netlify.app/" target="_blank"><i
@@ -554,7 +554,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Cool Card Scrolling</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-7" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini7.netlify.app/" target="_blank"><i
@@ -569,7 +569,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Motion Effect</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-6" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini6.netlify.app/" target="_blank"><i
@@ -584,7 +584,7 @@
               <div class="work-info">
                 <h3>Interaction</h3>
                 <h2>Innovative Slider</h2>
-                <div class="work-buttons">
+                <div class="work-links">
                   <a href="https://github.com/Nurlybek-Nurzhan/Mini-Project-9" target="_blank"><i
                       class="bx bx-xs bxl-github"></i><span class="lang" data-key="workCode">Код</span></a>
                   <a href="https://nurzhan-mini9.netlify.app/" target="_blank"><i
@@ -623,9 +623,9 @@
                   с помощью качественно подобранных решений адаптива и
                   интeрактивов. Подробнее обо мне в моём
                 </span>
-                <button class="glow lang" id="cv" data-key="aboutCv">
+                <a class="glow lang" id="cv" data-key="aboutCv">
                   резюме
-                </button>
+                </a>
               </h5>
             </div>
             <ul class="professional-list">

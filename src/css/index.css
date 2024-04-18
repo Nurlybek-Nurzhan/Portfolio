@@ -158,7 +158,8 @@ section {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: transparent;
   color: var(--bright-color);
   border: 0.125rem solid var(--bright-color);
@@ -217,8 +218,7 @@ section {
   transition: all 0.5s ease;
 }
 
-.bx-moon,
-.bx-sun,
+.theme,
 .color-container,
 .color,
 .language-container,
@@ -227,13 +227,12 @@ section {
   font-size: 1.625rem;
 }
 
-.bx-moon,
-.bx-sun,
+.theme,
 .color-container,
 .language-container,
 .nav-menu-btn {
   color: var(--second-color);
-  z-index: 10;
+  z-index: 100;
 }
 
 .theme,
@@ -250,7 +249,11 @@ section {
 .theme:hover,
 .language-container:hover,
 .language:hover,
-.color-container:hover {
+.color-container:hover,
+.theme:focus,
+.language-container:focus,
+.language:focus,
+.color-container:focus {
   color: var(--bright-color);
   transition: all 0.2s ease;
 }
@@ -259,13 +262,13 @@ section {
 .language-container:active,
 .language:active,
 .color-container:active,
-.color:active {
+.color:active,
+.color:focus {
   transform: scale(0.8);
   transition: all 0.1s ease;
 }
 
 .language {
-  visibility: hidden;
   position: absolute;
   top: 6.25rem;
   right: 0;
@@ -281,6 +284,7 @@ section {
 
 .language,
 .color {
+  visibility: hidden;
   opacity: 0;
   z-index: -1;
 }
@@ -438,7 +442,8 @@ section {
   transition: all 0.3s ease;
 }
 
-.nav-items li a:hover {
+.nav-items li a:hover,
+.nav-items li a:focus {
   color: var(--bright-color);
   transition: all 0.3s ease;
 }
@@ -450,6 +455,8 @@ section {
 .nav-close-btn,
 .nav-menu-btn {
   display: none;
+  background-color: transparent;
+  border: 0;
 }
 /* ================================================================== HEADER ================================================================== */
 
@@ -510,7 +517,7 @@ section {
   margin-left: 0.25rem;
 }
 
-.home-buttons {
+.home-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -680,7 +687,9 @@ section {
 }
 
 #sites-button:hover,
-#inter-button:hover {
+#inter-button:hover,
+#sites-button:focus,
+#inter-button:focus {
   color: var(--bright-color);
   transition: all 0.3s ease;
 }
@@ -802,7 +811,7 @@ section {
   color: var(--second-color);
 }
 
-.work-buttons {
+.work-links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -811,7 +820,7 @@ section {
   margin-top: 0.25rem;
 }
 
-.work-buttons a {
+.work-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -820,13 +829,13 @@ section {
   transition: all 0.3s ease;
 }
 
-.work-buttons a:hover {
+.work-links a:hover {
   color: var(--normal-color);
   transition: all 0.3s ease;
 }
 
-.work-buttons a i,
-.work-buttons a span {
+.work-links a i,
+.work-links a span {
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -906,7 +915,7 @@ section {
   padding-bottom: 1.5rem;
 }
 
-.about-text h5 button {
+.about-text h5 a {
   background-color: transparent;
   border: none;
   font-size: 1.1rem;
@@ -1190,7 +1199,8 @@ section {
   transition: all 0.5s ease;
 }
 
-.social li a:hover {
+.social li a:hover,
+.social li a:focus {
   border: 2px solid #000000;
   background-color: #000000;
   color: var(--bright-color);
@@ -1247,12 +1257,13 @@ section {
   .nav-close-btn,
   .nav-menu-btn {
     display: block;
-    cursor: pointer;
     transition: all 0.3s ease;
   }
 
   .nav-close-btn:hover,
-  .nav-menu-btn:hover {
+  .nav-menu-btn:hover,
+  .nav-close-btn:focus,
+  .nav-menu-btn:focus {
     color: var(--bright-color);
     transition: all 0.3s ease;
   }
@@ -1261,7 +1272,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1.5rem;
+    margin: 2rem;
   }
 
   .nav-items-container {
@@ -1285,13 +1296,13 @@ section {
     background-color: #ffffff;
     background-image: url(/utils/images/room.png);
     background-repeat: no-repeat;
-    background-size: 15.75rem;
+    background-size: 17rem;
     background-position: left;
     background-position-y: center;
     width: 37.5rem;
     max-width: 37.5rem;
     margin: 1.25rem;
-    padding: 5rem 5rem 5rem 21rem;
+    padding: 5rem 5rem 5rem 22rem;
     border-radius: 0.75rem;
     box-shadow: var(--box-shadow);
     display: flex;

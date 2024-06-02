@@ -138,6 +138,11 @@ section {
   font-family: "Poppins", sans-serif;
   font-size: 4.5rem;
   font-weight: 800;
+  background: -o-linear-gradient(
+    bottom,
+    transparent 0%,
+    var(--first-color) 70%
+  );
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -310,18 +315,12 @@ section {
 }
 
 .theme,
+.language-container,
 .color-container,
 .color,
-.language-container,
-.nav-close-btn,
-.nav-menu-btn {
+.nav-menu-btn,
+.nav-close-btn {
   font-size: 1.625rem;
-}
-
-.theme,
-.color-container,
-.language-container,
-.nav-menu-btn {
   color: var(--second-color);
   z-index: 100;
 }
@@ -340,47 +339,37 @@ section {
 }
 
 .theme:hover,
-.language-container:hover,
-.language:hover,
-.color-container:hover,
 .theme:focus,
+.language-container:hover,
 .language-container:focus,
-.language:focus,
-.color-container:focus {
+.color-container:hover,
+.color-container:focus,
+.language:hover,
+.language:focus {
   color: var(--bright-color);
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
+.color:hover,
+.color:focus {
+  text-shadow: 0 0 0.5rem var(--line-color);
+}
+
 .theme:active,
 .language-container:active,
-.language:active,
 .color-container:active,
+.language:active,
 .color:active,
-.color:focus {
+.nav-menu-btn:active,
+.nav-close-btn:active {
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
   -webkit-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
-}
-
-.language {
-  position: absolute;
-  top: 6.5rem;
-  right: 0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--second-color);
-  background-color: var(--body-bg-color);
-  border: 0.125rem solid var(--second-color);
-  border-radius: 0.625rem;
-  padding: 0.5rem;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 .language,
@@ -403,6 +392,22 @@ section {
 
 .language-container {
   top: 6.75rem;
+}
+
+.language {
+  position: absolute;
+  top: 6.5rem;
+  right: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--second-color);
+  background-color: var(--body-bg-color);
+  border: 0.125rem solid var(--second-color);
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .color-container,
@@ -1758,7 +1763,7 @@ section {
 
   .nav-items-container .nav-items {
     position: relative;
-    background-color: #ffffff;
+    background-color: var(--box-color);
     background-image: url(/utils/images/room.png);
     background-repeat: no-repeat;
     background-size: 17rem;
@@ -1809,7 +1814,7 @@ section {
   }
 
   .nav-items li a {
-    color: #000000;
+    color: var(--first-color);
   }
 
   .home {

@@ -1764,7 +1764,7 @@ section {
   .nav-items-container .nav-items {
     position: relative;
     background-color: var(--box-color);
-    background-image: url(/utils/images/room.png);
+    background-image: url(/public/images/room.png);
     background-repeat: no-repeat;
     background-size: 17rem;
     background-position: left;

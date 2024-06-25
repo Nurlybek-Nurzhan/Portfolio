@@ -1,10 +1,10 @@
 @font-face {
   font-family: Montserrat;
   src: local("Montserrat"),
-    url("/utils/fonts/Montserrat-Regular.woff") format("woff"),
-    url("/utils/fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("/utils/fonts/Montserrat-Regular.ttf") format("ttf"),
-    url("/utils/fonts/Montserrat-Regular.eot") format("eot");
+    url("/public/fonts/Montserrat-Regular.woff") format("woff"),
+    url("/public/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("/public/fonts/Montserrat-Regular.ttf") format("ttf"),
+    url("/public/fonts/Montserrat-Regular.eot") format("eot");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -13,10 +13,10 @@
 @font-face {
   font-family: Montserrat;
   src: local("Montserrat"),
-    url("/utils/fonts/Montserrat-Medium.woff") format("woff"),
-    url("/utils/fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("/utils/fonts/Montserrat-Medium.ttf") format("ttf"),
-    url("/utils/fonts/Montserrat-Medium.eot") format("eot");
+    url("/public/fonts/Montserrat-Medium.woff") format("woff"),
+    url("/public/fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("/public/fonts/Montserrat-Medium.ttf") format("ttf"),
+    url("/public/fonts/Montserrat-Medium.eot") format("eot");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -25,10 +25,10 @@
 @font-face {
   font-family: Montserrat;
   src: local("Montserrat"),
-    url("/utils/fonts/Montserrat-SemiBold.woff") format("woff"),
-    url("/utils/fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("/utils/fonts/Montserrat-SemiBold.ttf") format("ttf"),
-    url("/utils/fonts/Montserrat-SemiBold.eot") format("eot");
+    url("/public/fonts/Montserrat-SemiBold.woff") format("woff"),
+    url("/public/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("/public/fonts/Montserrat-SemiBold.ttf") format("ttf"),
+    url("/public/fonts/Montserrat-SemiBold.eot") format("eot");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -36,10 +36,10 @@
 
 @font-face {
   font-family: Poppins;
-  src: local("Poppins"), url("/utils/fonts/Poppins-Medium.woff") format("woff"),
-    url("/utils/fonts/Poppins-Medium.woff2") format("woff2"),
-    url("/utils/fonts/Poppins-Medium.ttf") format("ttf"),
-    url("/utils/fonts/Poppins-Medium.eot") format("eot");
+  src: local("Poppins"), url("/public/fonts/Poppins-Medium.woff") format("woff"),
+    url("/public/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("/public/fonts/Poppins-Medium.ttf") format("ttf"),
+    url("/public/fonts/Poppins-Medium.eot") format("eot");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -48,10 +48,10 @@
 @font-face {
   font-family: Poppins;
   src: local("Poppins"),
-    url("/utils/fonts/Poppins-SemiBold.woff") format("woff"),
-    url("/utils/fonts/Poppins-SemiBold.woff2") format("woff2"),
-    url("/utils/fonts/Poppins-SemiBold.ttf") format("ttf"),
-    url("/utils/fonts/Poppins-SemiBold.eot") format("eot");
+    url("/public/fonts/Poppins-SemiBold.woff") format("woff"),
+    url("/public/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("/public/fonts/Poppins-SemiBold.ttf") format("ttf"),
+    url("/public/fonts/Poppins-SemiBold.eot") format("eot");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -60,10 +60,10 @@
 @font-face {
   font-family: Poppins;
   src: local("Poppins"),
-    url("/utils/fonts/Poppins-ExtraBold.woff") format("woff"),
-    url("/utils/fonts/Poppins-ExtraBold.woff2") format("woff2"),
-    url("/utils/fonts/Poppins-ExtraBold.ttf") format("ttf"),
-    url("/utils/fonts/Poppins-ExtraBold.eot") format("eot");
+    url("/public/fonts/Poppins-ExtraBold.woff") format("woff"),
+    url("/public/fonts/Poppins-ExtraBold.woff2") format("woff2"),
+    url("/public/fonts/Poppins-ExtraBold.ttf") format("ttf"),
+    url("/public/fonts/Poppins-ExtraBold.eot") format("eot");
   font-weight: 800;
   font-style: normal;
   font-display: swap;

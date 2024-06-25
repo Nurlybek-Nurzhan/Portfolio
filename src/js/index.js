@@ -383,7 +383,7 @@ let cvLang = "ru";
 
 cvBtn.forEach((element) => {
   element.addEventListener("click", () => {
-    window.open(`/utils/cv/cv-${cvLang}.pdf`, "_blank");
+    window.open(`/public/cv/cv-${cvLang}.pdf`, "_blank");
   });
 });
 /* ===================================================================== OPEN CV ===================================================================== */
